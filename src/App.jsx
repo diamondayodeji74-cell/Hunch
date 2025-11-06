@@ -1,23 +1,29 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LandingPage from "./pages/appPages/LandingPage";
-import './App.css'
-import HunchOrderPage from "./pages/appPages/HunchOrderPage";
-import TrackOrder from "./pages/appPages/TrackHunchOrder";
+import React from 'react';
 
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/landing" element={<LandingPage />} />
-          <Route path="/order" element={<HunchOrderPage />} />
-          <Route path="/trackOrder" element={<TrackOrder />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+function LandingPage() {
+    return(
+        <div style={{
+            width: '100vw',
+            height: '100vh', 
+            background: 'black',
+            color: 'red',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '2.5rem',
+            fontFamily: 'Arial, sans-serif',
+            textAlign: 'center',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            zIndex: 9999
+        }}>
+            <div>
+                <h1>YOU HAVE BEEN HACKED</h1>
+                <p>FOR YOUR ILLEGAL DOINGS</p>
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default LandingPage;
